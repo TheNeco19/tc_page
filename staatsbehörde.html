@@ -2,14 +2,55 @@
 <html lang="de">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Timeless City - Medical Department</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Timeless City</title>
   <link rel="stylesheet" href="assets/css/style.css" />
+  <script defer src="assets/js/main.js"></script>
 </head>
-<body class="landing-page">
-  <div class="logo">Timeless City</div>
-  <h1>Medical Department</h1>
-  <p>Diese Seite ist aktuell im Aufbau.</p>
-  <a href="index.html" class="btn">Zurück</a>
+<body>
+  <header>
+    <div class="header-container">
+      <img src="assets/img/tc_logo.png" alt="LSPD Logo" class="logo" />
+      <h1> Timeless City</h1>
+      <a href="login.html" class="login-btn">Login</a>
+    </div>
+    <nav>
+      <ul>
+        <li><a href="index.html">Startseite</a></li>
+        <li><a href="staatsbehörde.html" class="active">Staatsbehörde</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="container">
+    <section class="news-section">
+      <h2>Aktuelle News</h2>
+      <p>Bleib informiert über die neuesten Ereignisse beim LSPD.</p>
+
+      <div class="card-grid">
+        <article class="card">
+          <h3>Government</h3>
+          <p>Ist in Bearbeitung</p>
+          <a href="" class="btn">Government</a>
+        </article>
+
+        <article class="card">
+          <h3>Los santos Police Department</h3>
+          <p>Deine erste Anlaufstelle für alle Infos rund um das Los Santos Police Department.</p>
+          <a href="https://theneco19.github.io/tc_lspd/" class="btn">Police Department</a>
+        </article>
+
+        <article class="card">
+          <h3>Los santos Medical Department</h3>
+          <p>Ist in Bearbeitung</p>
+          <a href="" class="btn">Medical Department</a>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 TC - Timeless City</p>
+  </footer>
 </body>
 </html>
