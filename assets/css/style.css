@@ -81,6 +81,22 @@ nav ul li a:hover {
   padding: 20px;
 }
 
+.btn {
+  padding: 10px 20px;
+  background-color: #0055aa;
+  color: white;
+  text-decoration: none;
+  border-radius: 8px;
+  display: inline-block;
+  font-weight: 600;
+  font-size: 1rem;
+  transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #004080;
+}
+
 /* Hero Section */
 .hero {
   background-size: cover;
