@@ -2,25 +2,61 @@
 <html lang="de">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Timeless City</title>
   <link rel="stylesheet" href="assets/css/style.css" />
+  <script defer src="assets/js/main.js"></script>
 </head>
 <body>
-  <nav class="navbar">
-    <div class="logo">
-      <img src="assets/img/logo.png" alt="Timeless City Logo" />
-      <span>Timeless City</span>
+  <header>
+    <div class="header-container">
+      <img src="assets/img/lspd-logo.png" alt="LSPD Logo" class="logo" />
+      <h1> Timeless City</h1>
+      <a href="login.html" class="login-btn">Login</a>
     </div>
-  </nav>
+    <nav>
+      <ul>
+        <li><a href="https://theneco19.github.io/tc_page/" class="btn">Homepage</a></li>
+        <li><a href="index.html" class="active">LSPD-Startseite</a></li>
+        <li><a href="news.html">News</a></li>
+        <li><a href="bußgeldkatalog.html">Bußgeldkatalog</a></li>
+        <li><a href="team.html">Head of Police</a></li>
+      </ul>
+    </nav>
+  </header>
 
-  <main class="hero">
-    <h1>Willkommen auf Timeless City</h1>
-    <p>Wähle deine Abteilung</p>
-    <div class="btn-group">
-      <a href="https://theneco19.github.io/LSPD_test/" class="btn">Police Department</a>
-      <a href="md.html" class="btn">Medical Department</a>
-    </div>
+  <main class="container">
+    <section class="hero" style="background-image: url('assets/img/lspd-hero.png');">
+      <div class="hero-content">
+        <h2>Willkommen bei dem LSPD</h2>
+        <p>Deine erste Anlaufstelle für alle Infos rund um das Los Santos Police Department.</p>
+        <a href="login.html" class="btn-primary">Jetzt einloggen</a>
+      </div>
+    </section>
+
+    <section class="info-cards">
+      <article class="card">
+        <h3>News</h3>
+        <p>Bleib auf dem Laufenden! Hier posten wir alle wichtigen Infos, Änderungen und Neuigkeiten zum LSPD-Alltag.</p>
+        <a href="news.html" class="btn-secondary">Mehr erfahren</a>
+      </article>
+
+      <article class="card">
+        <h3>Bußgeldkatalog</h3>
+        <p>Informiere dich über aktuelle Bußgelder und Vergehen in Los Santos.</p>
+        <a href="bussgeldkatalog.html" class="btn-secondary">Mehr erfahren</a>
+      </article>
+
+      <article class="card">
+        <h3>Mitarbeitende</h3>
+        <p>Triff dein Team – Lerne die Verantwortlichen und Kollegen kennen.</p>
+        <a href="team.html" class="btn-secondary">Mehr erfahren</a>
+      </article>
+    </section>
   </main>
+
+  <footer>
+    <p>&copy; 2025 LSPD - Los Santos Police Department</p>
+  </footer>
 </body>
 </html>
