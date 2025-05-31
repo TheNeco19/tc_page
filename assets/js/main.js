@@ -14,7 +14,7 @@ document.addEventListener('DOMContentLoaded', () => {
   }
   updateButtonText();
 
-  // SLIDESHOW
+  // Slideshow-Logik
   const slides = document.querySelectorAll('.hero-slider .slide');
   let currentSlide = 0;
 
@@ -24,15 +24,15 @@ document.addEventListener('DOMContentLoaded', () => {
     slides[currentSlide].classList.add('active');
   }
 
-  if (slides.length > 1) {
+  // Erste Slide sichtbar machen (für Sicherheit)
+  if (slides.length > 0) {
+    slides[0].classList.add('active');
     setInterval(showNextSlide, 7000);
   }
 
-  // SCROLL BUTTON
-  document.querySelectorAll('.btn-scroll').forEach(btn => {
-    btn.addEventListener('click', function (e) {
-      e.preventDefault();
-      document.querySelector('#main-content')?.scrollIntoView({ behavior: 'smooth' });
-    });
+  // Scrollverhalten für "Mehr erfahren"-Button
+  document.querySelector('.btn-scroll')?.addEventListener('click', function (e) {
+    e.preventDefault();
+    document.querySelector('#main-content')?.scrollIntoView({ behavior: 'smooth' });
   });
 });
