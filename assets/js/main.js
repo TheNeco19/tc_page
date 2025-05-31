@@ -27,3 +27,9 @@ document.addEventListener('DOMContentLoaded', () => {
     updateButtonText();
   });
 });
+
+document.querySelector('.btn-scroll')?.addEventListener('click', function (e) {
+  e.preventDefault();
+  document.querySelector('#main-content').scrollIntoView({ behavior: 'smooth' });
+});
+
