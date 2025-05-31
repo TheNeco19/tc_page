@@ -28,8 +28,34 @@ document.addEventListener('DOMContentLoaded', () => {
   });
 });
 
+let currentSlide = 0;
+const slides = document.querySelectorAll('.hero-slideshow .slide');
+
+function nextSlide() {
+  slides[currentSlide].classList.remove('active');
+  currentSlide = (currentSlide + 1) % slides.length;
+  slides[currentSlide].classList.add('active');
+}
+
+setInterval(nextSlide, 5000); // alle 5 Sekunden
+
+
 document.querySelector('.btn-scroll')?.addEventListener('click', function (e) {
   e.preventDefault();
   document.querySelector('#main-content').scrollIntoView({ behavior: 'smooth' });
 });
+
+let slides = document.querySelectorAll('.slide');
+let currentSlide = 0;
+
+function showNextSlide() {
+  slides[currentSlide].classList.remove('active');
+
+  currentSlide = (currentSlide + 1) % slides.length;
+
+  slides[currentSlide].classList.add('active');
+}
+
+setInterval(showNextSlide, 7000); // alle 7 Sekunden
+
 
